@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Books with filter</title><meta name="description" content="Welcome to search params demo"/><link rel="stylesheet" href="/assets/root--Tlztfbx.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"/></head><body><div class="min-h-screen w-full flex items-center justify-center overflow-hidden bg-black text-white"><div class="text-9xl font-extrabold animate-spin">L</div></div><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><link rel="modulepreload" href="/assets/entry.client-C7yagRbJ.js"/><link rel="modulepreload" href="/assets/chunk-IR6S3I6Y-CVLM99_-.js"/><link rel="modulepreload" href="/assets/with-props-CFJtaEa6.js"/><link rel="modulepreload" href="/assets/root-C8KHhvp3.js"/><link rel="modulepreload" href="/assets/books-C7as9NSb.js"/><script>window.__reactRouterContext = {"basename":"/","future":{"unstable_optimizeDeps":false},"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">;
+import * as route0 from "/assets/root-C8KHhvp3.js";
+import * as route1 from "/assets/books-C7as9NSb.js";
+  window.__reactRouterManifest = {
+  "entry": {
+    "module": "/assets/entry.client-C7yagRbJ.js",
+    "imports": [
+      "/assets/chunk-IR6S3I6Y-CVLM99_-.js"
+    ],
+    "css": []
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasErrorBoundary": true,
+      "module": "/assets/root-C8KHhvp3.js",
+      "imports": [
+        "/assets/chunk-IR6S3I6Y-CVLM99_-.js",
+        "/assets/with-props-CFJtaEa6.js"
+      ],
+      "css": [
+        "/assets/root--Tlztfbx.css"
+      ]
+    },
+    "routes/books": {
+      "id": "routes/books",
+      "parentId": "root",
+      "path": "books",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/books-C7as9NSb.js",
+      "imports": [
+        "/assets/with-props-CFJtaEa6.js",
+        "/assets/chunk-IR6S3I6Y-CVLM99_-.js"
+      ],
+      "css": []
+    },
+    "routes/home": {
+      "id": "routes/home",
+      "parentId": "root",
+      "index": true,
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasErrorBoundary": false,
+      "module": "/assets/home-BETQVWra.js",
+      "imports": [
+        "/assets/with-props-CFJtaEa6.js",
+        "/assets/chunk-IR6S3I6Y-CVLM99_-.js"
+      ],
+      "css": []
+    }
+  },
+  "url": "/assets/manifest-73208267.js",
+  "version": "73208267"
+};
+  window.__reactRouterRouteModules = {"root":route0,"routes/books":route1};
+
+import("/assets/entry.client-C7yagRbJ.js");</script></body></html><!--$?--><template id="B:0"></template><!--/$--><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_5\":-5,\"_6\":-5},\"loaderData\",{\"_3\":-5,\"_4\":-5},\"root\",\"routes/books\",\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>function $RC(a,b){a=document.getElementById(a);b=document.getElementById(b);b.parentNode.removeChild(b);if(a){a=a.previousSibling;var f=a.parentNode,c=a.nextSibling,e=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d)if(0===e)break;else e--;else"$"!==d&&"$?"!==d&&"$!"!==d||e++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;b.firstChild;)f.insertBefore(b.firstChild,c);a.data="$";a._reactRetry&&a._reactRetry()}};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script>

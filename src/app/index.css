@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+:root {
+	--default-font-family: Montserrat, Verdana, sans-serif;
+}
