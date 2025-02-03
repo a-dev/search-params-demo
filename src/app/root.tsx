@@ -10,6 +10,8 @@ import {
 import type { Route } from './+types/root';
 import './index.css';
 
+import Favicon from '@/assets/favicon.svg';
+
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
   {
@@ -21,7 +23,22 @@ export const links: Route.LinksFunction = () => [
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap',
   },
+  {
+    rel: 'icon',
+    href: Favicon,
+    type: 'image/svg+xml',
+  },
 ];
+
+export function meta() {
+  return [
+    { title: 'Search params demo' },
+    {
+      name: 'description',
+      content: 'Search params demo',
+    },
+  ];
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

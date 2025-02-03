@@ -11,8 +11,17 @@ export default {
     return ['/', '/books'];
   },
   buildEnd: async () => {
-    await fs.rmdir('docs', { recursive: true });
-    await fs.move(path.resolve('build/client'), path.resolve('docs'));
-    await fs.rmdir('build', { recursive: true });
+    await fs.rm('docs', { recursive: true });
+    // AAAAAAA !!!
+    await fs.move(
+      path.resolve('build/client/search-params-demo'),
+      path.resolve('docs'),
+    );
+    await fs.move(
+      path.resolve('build/client/assets'),
+      path.resolve('docs/assets'),
+    );
+    await fs.rm('build', { recursive: true });
   },
+  basename: '/search-params-demo/',
 } satisfies Config;

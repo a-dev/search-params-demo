@@ -1,5 +1,4 @@
 import { CircleChevronLeft, Eraser } from 'lucide-react';
-import { NavLink } from 'react-router';
 
 import { BookCard } from '@/components/ui/book-card';
 import type { Book } from '@/db/books';
@@ -21,13 +20,14 @@ export function BooksPage({ books }: { books: Book[] }) {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-8">
       <div className="flex items-center gap-8 mb-4">
-        <NavLink
-          to="/"
+        {/* You can't use NavLink with SSG yet... */}
+        <a
+          href="/search-params-demo/"
           className="flex items-center gap-2 text-amber-500 -ml-2"
         >
           <CircleChevronLeft />
           {'back'}
-        </NavLink>
+        </a>
         <h1 className="text-4xl font-bold">Books</h1>
       </div>
 

@@ -1,10 +1,12 @@
 import type { Book } from '@/db/books';
 
+import Placeholder from '@/assets/placeholder.svg';
+
 export function BookCard({ book }: { book: Book }) {
   return (
     <li className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
       <img
-        src={book.cover || '/placeholder.svg'}
+        src={book.cover || Placeholder}
         alt={book.title}
         width={300}
         height={400}
